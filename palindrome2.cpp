@@ -14,7 +14,6 @@ void removeSpecialCharacter(string s)
 	cout << s;
 }
 
-// driver code
 int main()
 {
 	string s = "$Gee*k;s..fo, r'Ge^eks?";
