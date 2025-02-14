@@ -1,10 +1,6 @@
-// CPP program to remove all the
-// characters other than alphabets
 #include <bits/stdc++.h>
 using namespace std;
 
-// function to remove characters and
-// print new string
 void removeSpecialCharacter(string s)
 {
 	for (int i = 0; i < s.size(); i++) {
