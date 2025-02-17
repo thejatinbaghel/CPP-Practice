@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int sum(int n){
-    if(n==0) return 0;
-    return n+sum(n-1);
+bool rev(string s, int i){
+    if(i>=s.size()/2) return true;
+    if(s[i]!=s[s.size()-i-1]) return false;
 }
+
 int main(){
-    int n;
-    cin >> n;
-    cout << sum(n);
-    return 0;
+    string s = "malayalam";
+    cout<<rev(s, 0);
 }
