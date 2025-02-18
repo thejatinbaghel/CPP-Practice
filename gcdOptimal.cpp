@@ -11,5 +11,5 @@ int main(){
     }
 
     if(n==0) cout << m;
-    cout << n;
+    else cout << n;
 }

@@ -1,12 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool rev(string s, int i){
-    if(i>=s.size()/2) return true;
-    if(s[i]!=s[s.size()-1-i]) return false;
-}
+
 
 int main(){
-    string s = "malayalam";
-    cout<<rev(s, 0);
+    int n, m;
+    cin >> n >> m;
+    
+    while(n>0&&m>0){
+        if(n>m) n=n%m;
+        else m=m%n;
+    }
+
+    if(n==0) cout << m;
+    else cout << n;
 }
