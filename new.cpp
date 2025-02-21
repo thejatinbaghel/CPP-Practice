@@ -1,14 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int rev=0;
 int main(){
-    int n;
-    cin >> n;
+int num1 = 0;
+int num2 = 1;
+int num;
+cin >> num;
 
-    while(n>0){
-        rev = rev*10+n%10;
-        n=n/10;
-    }
-    cout << endl;    cout << rev;
+for(int i = 0; i < num; i++){
+    cout << num1 << " ";
+    int next = num1 + num2;
+    num1 = num2;
+    num2 = next;
+    
+}
 }
