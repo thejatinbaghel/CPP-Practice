@@ -1,17 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-int arr[5];
-int k;
-cin >> k;
-for (int i = 0; i < 5; i++)
-{
-    cin >> arr[i];
-}
-for (int i = 0; i < 5; i++)
-{
-    if(arr[i]==k)
+int fib(int num){
+    if(num<=1) return num;
+    return fib(num-1)+fib(num-2);
 }
 
+int main(){
+    int num;
+    cin >> num;
+    cout << fib(num);
 }
