@@ -2,16 +2,16 @@
 using namespace std;
 
 int main(){
-int num1 = 0;
-int num2 = 1;
-int num;
-cin >> num;
-
-for(int i = 0; i < num; i++){
-    cout << num1 << " ";
-    int next = num1 + num2;
-    num1 = num2;
-    num2 = next;
-    
+int arr[5];
+int k;
+cin >> k;
+for (int i = 0; i < 5; i++)
+{
+    cin >> arr[i];
 }
+for (int i = 0; i < 5; i++)
+{
+    if(arr[i]==k)
+}
+
 }
