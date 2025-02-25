@@ -2,11 +2,12 @@
 using namespace std;
 int main(){
     vector<int> nums = {1, 2, 45, 32, 2, 45, 45, 7};
-    int val = 45;
+    int val;
+    cin >> val;
     int i = 0;
-    for (const int num : nums)
-      if (num != val)
-        nums[i++] = num;
+    for(int x:nums){
+        if(x!=val) nums[i++];
+    }
     cout << i;
     return 0;
 }
