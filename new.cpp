@@ -14,8 +14,7 @@ int main(){
         {
             if(arr[j]<arr[j-1]) swap(arr[j], arr[j-1]);
             else break;
-        }
-        
+        }     
     }
     
     for (int i = 0; i < n; i++)
