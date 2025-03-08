@@ -9,18 +9,18 @@ int main(){
         cin >> arr[i];
     }
     
-    for(int i = 1; i<n; i++){
-        for (int j = i; j > 0; j--)
-        {
-            if(arr[j]<arr[j-1]) swap(arr[j], arr[j-1]);
-            else break;
-        }     
-    }
-    
-    
+    map<int, int> mp;
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << " ";
+        mp[arr[i]]++;
+    }
+    
+    int q;
+    cin >> q;
+    while(q--){
+        int number;
+        cin >> number;
+        cout << mp[number] << endl;
     }
      
     return 0;
