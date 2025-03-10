@@ -14,7 +14,6 @@ int main(){
     {
         mp[arr[i]]++;
     }
-    
     int q;
     cin >> q;
     while(q--){
