@@ -39,3 +39,18 @@ int main(){
 //         cin >> n;
 //         cout << reverse(n);
 //     }
+
+
+// 3rd solution
+// int main(){
+//     int num;
+//     cin >> num;
+//     int reverse  = 0;
+
+//     while(num!=0){
+//         int rem = num%10;
+//         reverse = reverse * 10 + rem;
+//         num /= 10;
+//     }
+
+//     cout << reverse;
