@@ -16,5 +16,10 @@ int main(){
         if (arr[i] > largest) largest = arr[i];
     }
     
-    cout << largest;
+    int secondLargest = -1;
+    for (int i = 0; i < sizeOfArray; i++){
+        if(arr[i] > secondLargest && arr[i] != largest) secondLargest = arr[i];
+    }
+
+    cout << secondLargest;
 }

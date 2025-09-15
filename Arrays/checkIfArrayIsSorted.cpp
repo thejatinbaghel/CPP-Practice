@@ -10,11 +10,14 @@ int main(){
         cin >> arr[i];
     }
 
-    int largest = arr[0];
-    for (int i = 0; i < sizeOfArray; i++)
+    for (int i = i; i < sizeOfArray; i++)
     {
-        if (arr[i] > largest) largest = arr[i];
+        if(arr[i] >= arr[i-1]){
+
+        }
+        else{
+            return false;
+        }
     }
-    
-    cout << largest;
+    return true;
 }

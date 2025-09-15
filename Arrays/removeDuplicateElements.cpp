@@ -10,11 +10,12 @@ int main(){
         cin >> arr[i];
     }
 
-    int largest = arr[0];
-    for (int i = 0; i < sizeOfArray; i++)
-    {
-        if (arr[i] > largest) largest = arr[i];
+    int i = 0;
+    for(int j = 1; j < sizeOfArray; j++){
+        if(arr[j] != arr[i]){
+            arr[i+1] = arr[j];
+            i++;
+        }
     }
-    
-    cout << largest;
+    cout << i+1;
 }

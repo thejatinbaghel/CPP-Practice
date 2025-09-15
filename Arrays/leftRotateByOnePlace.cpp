@@ -10,11 +10,16 @@ int main(){
         cin >> arr[i];
     }
 
-    int largest = arr[0];
+    int temp = arr[0];
+    for (int i = 0; i < sizeOfArray - 1; i++)
+    {
+        arr[i] = arr[i+1];
+    }
+    arr[sizeOfArray - 1] = temp;
+    
     for (int i = 0; i < sizeOfArray; i++)
     {
-        if (arr[i] > largest) largest = arr[i];
+        cout << arr[i] << " ";
     }
     
-    cout << largest;
 }
