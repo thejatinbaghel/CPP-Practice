@@ -17,5 +17,10 @@ int main(){
             i++;
         }
     }
-    cout << i+1;
+    cout << i+1 << endl; // Number of unique elements
+
+    // Print updated array
+    for(int idx = 0; idx <= i; idx++) {
+        cout << arr[idx] << " ";
+    }
 }
